@@ -1,3 +1,17 @@
+//icon
+
+let menuIcon = document.querySelector("#menu-icon");
+let navlist = document.querySelector(".navlist");
+
+menuIcon.onclick = ()=>{
+  menuIcon.classList.toggle("bx-x");
+  navlist.classList.toggle("open");
+}
+window.onscroll = ()=>{
+  menuIcon.classList.remove("bx-x");
+  navlist.classList.remove("open");
+}
+
 document.addEventListener('DOMContentLoaded', (event) => {
   const savedTheme = localStorage.getItem('theme') || 'light';
   switchTheme(savedTheme);
@@ -17,7 +31,6 @@ function switchTheme(theme) {
   // Save the selected theme in local storage
   localStorage.setItem('theme', theme);
 }
-
 (function() {
   "use strict";
 
@@ -161,16 +174,6 @@ function switchTheme(theme) {
     }
   }, true)
 
-
-  const hamburger = document.querySelector(".hamburger");
-const navMenu = document.querySelector(".nav-menu");
-
-hamburger.addEventListener("click", mobileMenu);
-
-function mobileMenu() {
-    hamburger.classList.toggle("active");
-    navMenu.classList.toggle("active");
-}
 
   /**
    * Scroll with ofset on page load with hash links in the url
@@ -317,5 +320,9 @@ setInterval(updateTime, 1000);
 
 // Initial call to display time immediately
 updateTime();
+
+
+
+
 
 

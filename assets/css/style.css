@@ -38,7 +38,11 @@ body.blue-mode {
 }
 
 
-
+@media (max-width: 768px) {
+  .theme-switcher{
+    right: 50px;
+  }
+}
 
 a {
   color: #ffb727;
@@ -224,15 +228,7 @@ h6 {
   visibility: visible;
 }
 
-@media (max-width: 1366px) {
-  .navbar .dropdown .dropdown ul {
-    left: -90%;
-  }
 
-  .navbar .dropdown .dropdown:hover>ul {
-    left: -100%;
-  }
-}
 
 /**
 * Mobile Navigation 
@@ -340,6 +336,23 @@ h6 {
   display: block;
 }
 
+.hamburger {
+  display: none;
+}
+
+.bar {
+  display: block;
+  width: 25px;
+  height: 3px;
+  margin: 5px auto;
+  -webkit-transition: all 0.3s ease-in-out;
+  transition: all 0.3s ease-in-out;
+  background-color: #101010;
+
+
+
+
+}
 /*--------------------------------------------------------------
 # Hero Section
 --------------------------------------------------------------*/
@@ -413,6 +426,14 @@ h6 {
 @media (max-width: 575px) {
   #hero h1 {
     font-size: 40px;
+  }
+
+  @media only screen and (max-width: 768px)
+  {
+    .hamburger {
+      display: block;
+      cursor: pointer;
+    }
   }
 
   #hero h2 {

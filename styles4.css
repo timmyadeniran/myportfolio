@@ -1,0 +1,54 @@
+/* styles.css */
+body {
+    transition: background-color 0.3s, color 0.3s;
+}
+
+body.light-mode {
+    background-color: white;
+    color: black;
+}
+
+body.dark-mode {
+    background-color: #121212;
+    color: #e0e0e0;
+}
+
+body.blue-mode {
+    background-color: #001f3f;
+    color: #f0f0f0;
+}
+
+.theme-switcher {
+    position: fixed;
+    top: 10px;
+    right: 10px;
+    background: rgba(255, 255, 255, 0.8);
+    padding: 10px;
+    border-radius: 5px;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+}
+
+.theme-switcher label {
+    margin-right: 10px;
+}
+
+.theme-switcher select {
+    padding: 5px;
+    border-radius: 5px;
+    border: 1px solid #ccc;
+}
+
+.container {
+    max-width: 600px;
+    margin: auto;
+    background: rgba(255, 255, 255, 0.9);
+    padding: 20px;
+    border-radius: 10px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
+
+#status {
+    margin-top: 20px;
+    font-weight: bold;
+}
+
